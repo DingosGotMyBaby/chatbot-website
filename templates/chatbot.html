@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>The Chat Bot</h1>
+    <p>Here is where you can have some fun with the AI<br>
+    Please don't abuse, cause I am doing this for fun</p>
+    <br>
+    {% if prompt is defined %}
+    <p><b>Prompt is: </b> {{ prompt }}</p>
+    {% endif %}
+    <p>{{ out }}</p>
+
+{% endblock %}
